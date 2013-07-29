@@ -82,7 +82,7 @@ expand time outward
 _><_  
 shrink time inward
 
-_<4>_  
+_\<4\>_  
 expand time outward, faster
 
 _|>>_  
