@@ -73,10 +73,10 @@ set the x-axis range to be Jan 1, 2001 to Jan 1 2004
 _>_  
 move one entire time axis forward in time
 
-_0.5>_
+_0.5>_  
 move forward in time by one half of the time axis
 
-_0.02<_
+_0.02<_  
 move backward a small amount (2 percent of current the time axis)
 
 _>>_  
@@ -94,10 +94,10 @@ shrink time inward
 _\<4\>_  
 expand time outward, faster
 
-_s2007-2 3w_
+_s2007-2 3w_  
 set the y-axis start time to Feb 1, 2007 then redefine both start and end times to be centered at 3 weeks
 
-_s2007-2 |3w_
+_s2007-2 |3w_  
 set the y-axis start time to Feb 1, 2007 with an end time of Feb 21, 2007
 
 _|>>_  
