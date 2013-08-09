@@ -95,10 +95,10 @@ _\<4\>_
 expand time outward, faster
 
 _s2007-2 3w_  
-set the y-axis start time to Feb 1, 2007 then redefine both start and end times to be centered at 3 weeks
+set the start time to Feb 1, 2007 then redefine both start and end times to be centered at 3 weeks
 
 _s2007-2 |3w_  
-set the y-axis start time to Feb 1, 2007 with an end time of Feb 21, 2007
+set the start time to Feb 1, 2007 with an end time of Feb 21, 2007
 
 _|>>_  
 retain the start time, but move the end time forward
@@ -130,6 +130,12 @@ set :linewidth to 2
 
 _-style=lp_  
 set :style to linepoints
+
+_-style=l_  
+set :style to lines
+
+_-style=p_  
+set :style to points
 
 ### other:
 
