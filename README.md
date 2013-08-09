@@ -49,6 +49,9 @@ set the x-axis range to the start and end times from [csv file a]
 _>y_  
 set the x-axis to the next full year
 
+_>2m_
+set the x-axis to the next full 2-month period
+
 _3w_  
 set the x-axis to 3 weeks surrounding the center time
 
@@ -90,6 +93,12 @@ shrink time inward
 
 _\<4\>_  
 expand time outward, faster
+
+_s2007-2 3w_
+set the y-axis start time to Feb 1, 2007 then redefine both start and end times to be centered at 3 weeks
+
+_s2007-2 |3w_
+set the y-axis start time to Feb 1, 2007 with an end time of Feb 21, 2007
 
 _|>>_  
 retain the start time, but move the end time forward
