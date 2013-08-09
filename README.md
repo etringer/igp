@@ -50,16 +50,16 @@ _>y_
 set the x-axis to the next full year
 
 _3w_  
-set the x-axis to 3 weeks from the current start time
+set the x-axis to 3 weeks surrounding the center time
 
 _2d_  
-set the x-axis to 2 days from the current start time
+set the x-axis to 2 days surrounding the center time
 
 _6m_  
-set the x-axis to 6 months from the current start time
+set the x-axis to 6 months surrounding the center time
 
 _0.25y_  
-set the x-axis to 0.25 years from the current start time
+set the x-axis to 0.25 years surrounding the center time
 
 _s2008-6_  
 set the x-axis start time to be June 1, 2008
@@ -69,6 +69,12 @@ set the x-axis range to be Jan 1, 2001 to Jan 1 2004
 
 _>_  
 move one entire time axis forward in time
+
+_0.5>_
+move forward in time by one half of the time axis
+
+_0.02<_
+move backward a small amount (2 percent of current the time axis)
 
 _>>_  
 move two whole time axes forward in time
