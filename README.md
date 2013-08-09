@@ -49,7 +49,7 @@ set the x-axis range to the start and end times from [csv file a]
 _>y_  
 set the x-axis to the next full year
 
-_>2m_
+_>2m_  
 set the x-axis to the next full 2-month period
 
 _3w_  
