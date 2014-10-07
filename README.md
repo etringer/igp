@@ -11,7 +11,21 @@ igp.rb [csv file a] [csv file b] ... etc.
 by default, the first variable from [csv file a] is plotted in a new window,
 and details of all files are shown in the terminal. interactive-mode is established. 
 
+## special x-axis (time) characters
+
+each can have a number in front without spaces
+_y_ : year
+_m_ : month
+_w_ : week
+_d_ : day
+_h_ : hour
+
 ## examples:
+
+NOTE: Any number of these items can be used on a single line with a space between each.
+
+_4 |6w y0,5_
+plot variable 4 from each .csv file; set the time axis from start-time to 6-weeks from that; set the y-axis range from 0 to 5
 
 
 ### selecting variables for plotting:
@@ -49,20 +63,17 @@ set the x-axis range to the start and end times from [csv file a]
 _>y_  
 set the x-axis to the next full year
 
-_>2m_  
-set the x-axis to the next full 2-month period
-
 _3w_  
-set the x-axis to 3 weeks surrounding the center time
+set the x-axis to 3 weeks and centered
 
-_2d_  
-set the x-axis to 2 days surrounding the center time
+_|2d_  
+keep the start time as-is, and set the end time to 2 days from that
 
-_6m_  
-set the x-axis to 6 months surrounding the center time
+_6m|_  
+keep the end time as-is, and set the start time to 6 months prior to that
 
 _0.25y_  
-set the x-axis to 0.25 years surrounding the center time
+set the x-axis range to 0.25 years and centered
 
 _s2008-6_  
 set the x-axis start time to be June 1, 2008
@@ -72,12 +83,6 @@ set the x-axis range to be Jan 1, 2001 to Jan 1 2004
 
 _>_  
 move one entire time axis forward in time
-
-_0.5>_  
-move forward in time by one half of the time axis
-
-_0.02<_  
-move backward a small amount (2 percent of current the time axis)
 
 _>>_  
 move two whole time axes forward in time
@@ -93,12 +98,6 @@ shrink time inward
 
 _\<4\>_  
 expand time outward, faster
-
-_s2007-2 3w_  
-set the start time to Feb 1, 2007 then redefine both start and end times to be centered at 3 weeks
-
-_s2007-2 |3w_  
-set the start time to Feb 1, 2007 with an end time of Feb 21, 2007
 
 _|>>_  
 retain the start time, but move the end time forward
@@ -118,7 +117,7 @@ _y,85_
 set the y-axis upper limit to 85
 
 _y_  
-set the y-axis to auto-mode (this will automatically determine the y-axis limits)
+set the y-axis to auto-mode (this will automatically determine the y-axis limits); if the y-axis is already in auto-mode, then this will set the time axis to a centered 1-year range
 
 ### recognized options: 
 
@@ -131,12 +130,6 @@ set :linewidth to 2
 _-style=lp_  
 set :style to linepoints
 
-_-style=l_  
-set :style to lines
-
-_-style=p_  
-set :style to points
-
 ### other:
 
 _i_  
@@ -145,7 +138,7 @@ display file info
 _q_  
 quit the program 
 
-_<cr>_  
+_<carriage-return>_  
 do the previous command again
 
 ## assumptions about the input CSV files:
