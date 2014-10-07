@@ -138,7 +138,7 @@ display file info
 _q_  
 quit the program 
 
-_<carriage-return>_  
+_carriage-return_  
 do the previous command again
 
 ## assumptions about the input CSV files:
