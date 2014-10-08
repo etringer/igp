@@ -81,6 +81,9 @@ set the x-axis start time to be June 1, 2008
 _s2001 e2004_  
 set the x-axis range to be Jan 1, 2001 to Jan 1 2004
 
+_c2014-10-1_
+set the x-axis center point to this date
+
 _>_  
 move one entire time axis forward in time
 
@@ -98,6 +101,9 @@ shrink time inward
 
 _\<4\>_  
 expand time outward, faster
+
+_>0.2<_
+shrink the time axis by 20 percent
 
 _|>>_  
 retain the start time, but move the end time forward
